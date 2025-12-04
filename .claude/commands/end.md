@@ -1,4 +1,9 @@
-!bash .claude/scripts/end-session.sh
+---
+description: End the current learning session
+allowed-tools: Bash(*)
+---
+
+!`bash .claude/scripts/end-session.sh`
 
 The script above has incremented session_count and set last_session. Now complete these steps:
 
