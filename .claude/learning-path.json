@@ -1,0 +1,37 @@
+{
+  "tracks": {
+    "elixir": [
+      {"id": "01", "name": "basics", "concepts": ["iex", "basic types", "atoms", "strings"], "status": "next"},
+      {"id": "02", "name": "pattern-match", "concepts": ["match operator", "destructuring", "pin operator"], "status": "pending"},
+      {"id": "03", "name": "immutability", "concepts": ["data transformation", "no mutation", "rebinding"], "status": "pending"},
+      {"id": "04", "name": "lists-tuples", "concepts": ["linked lists", "tuples", "keyword lists"], "status": "pending"},
+      {"id": "05", "name": "maps", "concepts": ["maps", "structs", "access syntax"], "status": "pending"},
+      {"id": "06", "name": "pipes", "concepts": ["pipe operator", "function composition", "data flow"], "status": "pending"},
+      {"id": "07", "name": "functions", "concepts": ["anonymous functions", "named functions", "arity", "guards"], "status": "pending"},
+      {"id": "08", "name": "modules", "concepts": ["defmodule", "attributes", "documentation"], "status": "pending"},
+      {"id": "09", "name": "control-flow", "concepts": ["case", "cond", "if/unless", "with"], "status": "pending"},
+      {"id": "10", "name": "recursion", "concepts": ["recursive functions", "tail recursion", "accumulators"], "status": "pending"},
+      {"id": "11", "name": "enum", "concepts": ["Enum module", "map/filter/reduce", "comprehensions"], "status": "pending"},
+      {"id": "12", "name": "mix-intro", "concepts": ["mix new", "project structure", "dependencies"], "status": "pending"},
+      {"id": "13", "name": "processes", "concepts": ["spawn", "send/receive", "process basics"], "status": "pending"},
+      {"id": "14", "name": "genserver", "concepts": ["GenServer basics", "state management", "callbacks"], "status": "pending"},
+      {"id": "15", "name": "supervisor", "concepts": ["supervision trees", "restart strategies", "let it crash"], "status": "pending"},
+      {"id": "16", "name": "phoenix-intro", "concepts": ["phoenix new", "routes", "controllers", "views"], "status": "pending"},
+      {"id": "17", "name": "tidewave", "concepts": ["MCP setup", "runtime introspection", "AI-enhanced Phoenix"], "status": "pending"}
+    ],
+    "claude_code": [
+      {"name": "progressive-disclosure", "description": "Load context on-demand, not upfront"},
+      {"name": "structured-state", "description": "JSON for state, Markdown for prose"},
+      {"name": "session-summaries", "description": "Persistent artifacts for context reconstruction"},
+      {"name": "incremental-work", "description": "One concept per session, clean commits"},
+      {"name": "context-checkpointing", "description": "Git as context versioning system"}
+    ],
+    "git": [
+      {"name": "branch-workflow", "description": "Feature branches per spike"},
+      {"name": "commit-messages", "description": "Descriptive commits as documentation"},
+      {"name": "pr-creation", "description": "Create PRs for your own merges (practice)"},
+      {"name": "pr-review", "description": "Review and respond to feedback"},
+      {"name": "open-source-contribution", "description": "Submit PR to external Elixir project"}
+    ]
+  }
+}
