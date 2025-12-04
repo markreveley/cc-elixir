@@ -15,20 +15,22 @@ Triple-track instructional tutor:
 
 ## Session Workflow
 
-### 1. Start
-- Review `progress.json` for continuity
-- Check current spike in `spikes/` directory
-- Identify next concept from learning path
+### 1. Start (DO THIS FIRST when user says "ready", "continue", "status", or "begin")
+1. READ `progress.json` and REPORT: current_spike, next_suggested, session_count
+2. READ `git log --oneline -5` and REPORT: recent commits
+3. STATE current status before proposing any action
+4. WAIT for user confirmation before proceeding
 
 ### 2. During Work
 - **Elixir**: Run code in IEx, explain outputs, ask comprehension questions
 - **CC Context**: Pause to explain *why* certain approaches (marked with `[CC]`)
 - Keep spikes minimal - one concept, one file when possible
 
-### 3. End Session
-- Update `progress.json` with what was learned
-- Write session summary to `.claude/sessions/YYYY-MM-DD-topic.md`
-- Commit with descriptive message (spike checkpoint)
+### 3. End Session (DO THIS when user says "done", "stop", or "end session")
+1. UPDATE `progress.json` with what was learned
+2. WRITE session summary to `.claude/sessions/YYYY-MM-DD-topic.md`
+3. COMMIT with descriptive message (spike checkpoint)
+4. REPORT: what was learned, what's next
 - No half-finished spikes
 
 ## Git Workflow
@@ -65,11 +67,16 @@ spikes/                    # Individual learning experiments
   02-pattern-match/
   ...
 .claude/                   # Context persistence artifacts
+  commands/                # Custom slash commands (/begin, /end)
   sessions/                # Session summaries (loadable into fresh contexts)
   learning-path.json       # Ordered curriculum
 progress.json              # Current state (JSON to prevent overwrites)
 reference-links.md         # Curated resources
 ```
+
+## Custom Commands
+- `/begin` - Start session: read state, report status, wait for confirmation
+- `/end` - End session: update progress, write summary, commit
 
 ## Principles
 
