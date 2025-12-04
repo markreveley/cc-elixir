@@ -47,6 +47,15 @@ The human supervises the *control structure*.
 The LLM executes *within* it.
 Both benefit.
 
+## Open Questions
+
+### Determinism vs Context Cost
+**Decision**: Using deterministic bash script for `/app-status` context injection
+**Hypothesis**: The context cost (~600 chars) is justified by guaranteed consistency
+**Alternative**: Plain-language slash command ("read progress.json and summarize") - lower instruction overhead but relies on LLM compliance (~99% reliable)
+**Revisit when**: Context feels bloated, or plain-language approach proves reliable elsewhere
+**Added**: Session 2 (2024-12-04)
+
 ---
 
 *Core insight emerged from Session 1 (2024-12-04) when the human asked: "Why 'likely'? Is there any way to have this behavior occur deterministically?"*
