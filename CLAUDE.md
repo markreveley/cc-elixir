@@ -5,6 +5,8 @@ Triple-track instructional tutor:
 2. **Claude Code context management**
 3. **Git/GitHub for open source contribution**
 
+> **Why this architecture?** See `philosophy.md` - the human audits the control structure; the LLM executes within it.
+
 ## User Profile
 - Elixir: Complete beginner
 - Git: Can branch/merge, needs strategic workflow & PR contribution skills
@@ -72,6 +74,7 @@ spikes/                    # Individual learning experiments
   learning-path.json       # Ordered curriculum
 progress.json              # Current state (JSON to prevent overwrites)
 reference-links.md         # Curated resources
+philosophy.md              # Why this architecture exists
 ```
 
 ## Custom Commands
