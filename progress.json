@@ -3,11 +3,22 @@
   "completed_spikes": [],
   "learning": {
     "elixir_concepts": [],
-    "cc_patterns": [],
-    "git_skills": []
+    "cc_patterns": [
+      "progressive-disclosure",
+      "structured-state",
+      "imperative-prompting",
+      "slash-commands",
+      "context-checkpointing",
+      "auditability-asymmetry"
+    ],
+    "git_skills": [
+      "initial-commit",
+      "push-to-remote",
+      "commit-conventions"
+    ]
   },
   "next_suggested": "01-basics",
-  "session_count": 0,
-  "last_session": null,
-  "notes": "Initial setup complete. Triple-track curriculum established."
+  "session_count": 1,
+  "last_session": "2024-12-04",
+  "notes": "Setup complete. Architecture established. Ready for first Elixir spike."
 }
