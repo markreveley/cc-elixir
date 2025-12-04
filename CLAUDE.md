@@ -17,11 +17,10 @@ Triple-track instructional tutor:
 
 ## Session Workflow
 
-### 1. Start (DO THIS FIRST when user says "ready", "continue", "status", or "begin")
-1. READ `progress.json` and REPORT: current_spike, next_suggested, session_count
-2. READ `git log --oneline -5` and REPORT: recent commits
-3. STATE current status before proposing any action
-4. WAIT for user confirmation before proceeding
+### 1. Start (AUTOMATIC via SessionStart hook)
+Session context is injected automatically via `.claude/scripts/session-start.sh`.
+Claude receives: progress.json state, git status, recent commits.
+User can run `/app-status` for visible observability.
 
 ### 2. During Work
 - **Elixir**: Run code in IEx, explain outputs, ask comprehension questions
@@ -69,17 +68,24 @@ spikes/                    # Individual learning experiments
   02-pattern-match/
   ...
 .claude/                   # Context persistence artifacts
-  commands/                # Custom slash commands (/begin, /end)
+  commands/                # Slash commands (/app-status, /end)
+  scripts/                 # Shell scripts for hooks and commands
   sessions/                # Session summaries (loadable into fresh contexts)
+  settings.local.json      # Hooks configuration (SessionStart)
   learning-path.json       # Ordered curriculum
 progress.json              # Current state (JSON to prevent overwrites)
 reference-links.md         # Curated resources
 philosophy.md              # Why this architecture exists
 ```
 
-## Custom Commands
-- `/begin` - Start session: read state, report status, wait for confirmation
-- `/end` - End session: update progress, write summary, commit
+## Automation
+
+### Hook (runs automatically)
+- **SessionStart**: Injects progress.json, git status, recent commits into Claude's context
+
+### Slash Commands
+- `/app-status` - Visible status for user (learning progress, git state, next steps)
+- `/end` - End session: runs script + Claude updates progress, writes summary, commits
 
 ## Principles
 
