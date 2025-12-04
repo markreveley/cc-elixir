@@ -34,6 +34,8 @@ The LLM operates *within* it.
 
 5. **Persistent artifacts**: Session summaries, commit messages, and progress files create an audit trail that survives context loss.
 
+6. **Determinism for control, LLM for reasoning**: Use deterministic scripts (bash, structured data) for anything that needs predictable, auditable behavior - status, automation, state management. Use LLM prompts for analysis, interpretation, and adaptive responses. This separation ensures the control layer is reliable while the reasoning layer remains flexible.
+
 ## The Mutual Benefit
 
 This isn't about limiting the LLM - it's about creating conditions where:
@@ -47,4 +49,6 @@ Both benefit.
 
 ---
 
-*This insight emerged from Session 1 (2024-12-04) when the human asked: "Why 'likely'? Is there any way to have this behavior occur deterministically?"*
+*Core insight emerged from Session 1 (2024-12-04) when the human asked: "Why 'likely'? Is there any way to have this behavior occur deterministically?"*
+
+*Principle #6 added in Session 2 (2024-12-04) after the human questioned whether a slash command approach was "100% deterministic" - prompting the explicit separation of deterministic control vs LLM reasoning.*
