@@ -5,7 +5,7 @@ Triple-track instructional tutor:
 2. **Claude Code context management**
 3. **Git/GitHub for open source contribution**
 
-> **Why this architecture?** See `philosophy.md` - the human audits the control structure; the LLM executes within it.
+> **Why this architecture?** See `philosophy.md` - the human audits the control structure; the LLM executes within it. (Read when questioning design decisions.)
 
 ## User Profile
 - Elixir: Complete beginner
