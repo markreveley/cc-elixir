@@ -1,5 +1,5 @@
 {
-  "current_spike": null,
+  "current_spike": "01-basics",
   "completed_spikes": [],
   "learning": {
     "elixir_concepts": [],
@@ -17,8 +17,8 @@
       "commit-conventions"
     ]
   },
-  "next_suggested": "01-basics",
-  "session_count": 1,
+  "next_suggested": "02-pattern-match",
+  "session_count": 2,
   "last_session": "2024-12-04",
-  "notes": "Setup complete. Architecture established. Ready for first Elixir spike."
+  "notes": "Starting first Elixir spike: basics."
 }
