@@ -1,24 +1,36 @@
 {
-  "current_spike": "01-basics",
-  "completed_spikes": [],
+  "current_spike": null,
+  "completed_spikes": ["01-basics"],
   "learning": {
-    "elixir_concepts": [],
+    "elixir_concepts": [
+      "basic-types",
+      "string-interpolation",
+      "division-operators",
+      "bindings-vs-mutation",
+      "underscore-prefix",
+      "pin-operator",
+      "compile-vs-runtime",
+      "symbol-table",
+      "beam-registers"
+    ],
     "cc_patterns": [
       "progressive-disclosure",
       "structured-state",
       "imperative-prompting",
       "slash-commands",
       "context-checkpointing",
-      "auditability-asymmetry"
+      "auditability-asymmetry",
+      "deep-summaries"
     ],
     "git_skills": [
       "initial-commit",
       "push-to-remote",
-      "commit-conventions"
+      "commit-conventions",
+      "spike-branches"
     ]
   },
   "next_suggested": "02-pattern-match",
   "session_count": 2,
   "last_session": "2024-12-04",
-  "notes": "Starting first Elixir spike: basics."
+  "notes": "Spike 01 complete. Deep understanding of bindings vs mutation, compile-time vs runtime."
 }
